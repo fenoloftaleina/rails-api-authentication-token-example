@@ -28,7 +28,15 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    bcrypt (3.1.9)
     builder (3.2.2)
+    devise (3.4.1)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      responders
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     erubis (2.7.0)
     hike (1.2.3)
     i18n (0.6.11)
@@ -38,6 +46,7 @@ GEM
     mime-types (2.4.3)
     minitest (5.4.3)
     multi_json (1.10.1)
+    orm_adapter (0.5.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -60,6 +69,12 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.0)
+    responders (1.1.2)
+      railties (>= 3.2, < 4.2)
+    simple_token_authentication (1.6.0)
+      actionmailer (>= 3.2.6, < 5)
+      actionpack (>= 3.2.6, < 5)
+      devise (~> 3.2)
     spring (1.2.0)
     sprockets (2.12.3)
       hike (~> 1.2)
@@ -76,12 +91,16 @@ GEM
     tilt (1.4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    warden (1.2.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  devise (= 3.4.1)
   rails (= 4.1.6)
-  rails-api
+  rails-api (= 0.3.1)
+  simple_token_authentication (= 1.6.0)
   spring
   sqlite3
