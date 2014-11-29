@@ -56,3 +56,5 @@ echo Good luck!
 ## Dear Rails Community
 
 In case there's anything wrong in here, point it out, please. But as for me, it seems like a solution I've been looking for.
+
+And by the way, I was a little wrong to blame Rails Community, here is Sjors Provoost's post: http://provoost.tumblr.com/post/80873086965/json-api-authentication-using-devise-tokens, but only a little since the post explains only how it's done with regular Rails, not rails-api.
